@@ -1,4 +1,7 @@
 
+// Desarrolla un programa que le indique al usuario (en base a su perfil o 
+// responsabilidades) qué puede hacer o no en el sistema.
+
 let perfil = "INVITADO";
 let mensaje = " ";
 
