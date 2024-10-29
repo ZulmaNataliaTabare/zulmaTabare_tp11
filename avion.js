@@ -15,5 +15,5 @@ let alturaMin = 168;
 let alturaMax = 254;
 
 let mensaje = (velocidadMin >= 268 && velocidadMax <=278 && alturaMin >= 150 && alturaMax <= 300) ? `El avión está listo para el aterrizaje.` : 
-`El avión no está listo para el aterrizaje.`;
+`El avión no está listo para el aterrizaje, ajuste la velocidad y/o la altura.`;
 console.log(mensaje);
