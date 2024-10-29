@@ -31,27 +31,29 @@ function calculadora() {
     let operacion = prompt('Elige una operación (sumar, restar, multiplicar, dividir): ').toLowerCase();
 
     let resultado;
+    
     switch (operacion) {
         case 'sumar':
             resultado = operaciones.sumar(primerNumero, segundoNumero);
+            console.log(`El resultado de sumar ${primerNumero} + ${segundoNumero} es ${resultado}`);
             break;
         case 'restar':
             resultado = operaciones.restar(primerNumero, segundoNumero);
+            console.log(`El resultado de restar ${primerNumero} - ${segundoNumero} es ${resultado}`);
             break;
         case 'multiplicar':
             resultado = operaciones.multiplicar(primerNumero, segundoNumero);
+            console.log(`El resultado de multiplicar ${primerNumero} * ${segundoNumero} es ${resultado}`);
             break;
         case 'dividir':
             resultado = operaciones.dividir(primerNumero, segundoNumero);
+            console.log(`El resultado de dividir ${primerNumero} / ${segundoNumero} es ${resultado}`);
             break;
         default:
-            resultado = '“Las operaciones aceptadas son: sumar-restar-multiplicar-dividir”';
+            console.log('“Las operaciones aceptadas son: sumar-restar-multiplicar-dividir”.');
             break;
     }
-
-    console.log(`El resultado es: ${resultado}`);
 }
 
 // Ejecutar la función principal
-
 calculadora();
